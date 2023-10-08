@@ -14,11 +14,11 @@ namespace EShop.DataAccess.DBInitializer
 
         public DBInitializer(
             UserManager<IdentityUser> userManager,
-            RoleManager<IdentityRole> userRole,
+            RoleManager<IdentityRole> roleManager,
             ApplicationDbContext db)
         {
             _userManager = userManager;
-            _roleManager = userRole;
+            _roleManager = roleManager;
             _db = db;
         }
 
